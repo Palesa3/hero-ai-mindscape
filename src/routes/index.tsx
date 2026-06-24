@@ -1,29 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HeroApp } from "@/components/hero/HeroApp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "HERO AI — Client-Side Intelligence Console" },
+      {
+        name: "description",
+        content:
+          "HERO AI: a fully interactive client-side AI command console for scanning data, neural chat, and automating workplace tasks.",
+      },
+      { property: "og:title", content: "HERO AI — Client-Side Intelligence Console" },
+      { property: "og:description", content: "Fully interactive client-side AI command console." },
     ],
   }),
-  component: Index,
+  component: HeroApp,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
