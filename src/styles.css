@@ -152,5 +152,29 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(circle at 15% 20%, oklch(0.62 0.22 305 / 12%), transparent 40%),
+      radial-gradient(circle at 85% 75%, oklch(0.85 0.18 195 / 10%), transparent 45%);
+    background-attachment: fixed;
   }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@utility glass-panel {
+  background-color: oklch(0.21 0.035 264 / 55%);
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid oklch(0.85 0.18 195 / 18%);
+}
+
+@keyframes hero-pulse-glow {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px var(--color-neon-cyan)); }
+  50% { opacity: 0.7; filter: drop-shadow(0 0 18px var(--color-neon-cyan)); }
+}
+
+@utility pulse-glow {
+  animation: hero-pulse-glow 2s ease-in-out infinite;
 }
