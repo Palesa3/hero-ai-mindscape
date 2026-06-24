@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { UploadCloud, Sparkles, ShieldAlert, Mail, CheckCircle2 } from "lucide-react";
 import { useHero } from "./HeroContext";
 import { heroAudio } from "@/lib/heroAudio";

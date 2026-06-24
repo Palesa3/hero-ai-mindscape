@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Zap, ChevronDown, Network, Loader2 } from "lucide-react";
 import { useHero } from "./HeroContext";
 import { heroAudio } from "@/lib/heroAudio";
